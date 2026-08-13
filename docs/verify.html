@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>hdr-logo-glow — verify</title><style>
+:root{color-scheme:dark}
+body{margin:0;background:#07080a;color:#c9d1da;font:15px/1.6 -apple-system,system-ui,sans-serif;padding:44px 30px 90px}
+.w{max-width:900px;margin:0 auto}
+h1{font:600 24px/1.2 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:-.02em;color:#edf3f8;margin:0 0 12px}
+h2{font:600 10px/1.5 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#49515b;margin:44px 0 14px}
+p{color:#79838f;max-width:66ch}p strong{color:#c9d1da;font-weight:600}
+.row{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;background:#1b1f23;border:1px solid #1d2128;border-radius:3px;padding:26px;overflow-x:auto}
+.row.paper{background:#f4f5f7}
+figure{margin:0;text-align:center;flex:none}
+img,.sw{display:block;width:120px;height:120px;border-radius:12px;background:#000}
+.sw{background:#fff}
+figcaption{margin-top:10px;font:500 10px/1.45 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8f9aa6}
+.row.paper figcaption{color:#5c646d}
+figcaption b{display:block;color:#9be8ff;font-weight:600}
+.row.paper figcaption b{color:#1d6d86}
+ol{color:#79838f;max-width:66ch;padding-left:20px}li{margin-bottom:8px}li strong{color:#c9d1da}
+</style></head><body><div class="w">
+
+<h1>Verify</h1>
+<p>Chrome or Safari only. Finder, Quick Look and Preview flatten HDR.</p>
+
+<h2>Display capability</h2>
+<p>Flat luminance probes. If these do not outshine the plain white swatch, the display
+   or its settings are the limiting factor, not the files.</p>
+<div class="row">
+  <figure><span class="sw"></span><figcaption>plain<br><b>#ffffff</b></figcaption></figure>
+  <figure><img src="probe_flat_1000.jpg"><figcaption>flat<br><b>1000</b></figcaption></figure>
+  <figure><img src="probe_flat_4000.jpg"><figcaption>flat<br><b>4000</b></figcaption></figure>
+  <figure><img src="probe_flat_10000.jpg"><figcaption>flat<br><b>10000</b></figcaption></figure>
+</div>
+
+<h2>Examples · white mark on black</h2>
+<div class="row">
+  <figure><img src="../examples/algorithmio/source-mark.png"><figcaption>source<br><b>sdr</b></figcaption></figure>
+  <figure><img src="../examples/algorithmio/algorithmio-glow-STRONG.jpg"><figcaption>9.5% lit<br><b>mark</b></figcaption></figure>
+  <figure><img src="../examples/algorithmio/algorithmio-inverted-STRONG-textured.jpg"><figcaption>91% lit<br><b>field + shimmer</b></figcaption></figure>
+</div>
+
+<h2>Examples · coloured logo</h2>
+<div class="row">
+  <figure><img src="../examples/outpost/source-mark.png"><figcaption>source<br><b>sdr</b></figcaption></figure>
+  <figure><img src="../examples/outpost/outpost-glow-STRONG.jpg"><figcaption>28% lit<br><b>highlights</b></figcaption></figure>
+  <figure><img src="../examples/outpost/outpost-backlit-STRONG.jpg"><figcaption>29% lit<br><b>base lifted</b></figcaption></figure>
+</div>
+
+<h2>Same, on a light ground</h2>
+<div class="row paper">
+  <figure><img src="../examples/outpost/source-mark.png"><figcaption>source<br><b>sdr</b></figcaption></figure>
+  <figure><img src="../examples/outpost/outpost-glow-STRONG.jpg"><figcaption>28% lit<br><b>highlights</b></figcaption></figure>
+  <figure><img src="../examples/outpost/outpost-backlit-STRONG.jpg"><figcaption>29% lit<br><b>base lifted</b></figcaption></figure>
+</div>
+
+<h2>If the probes look flat</h2>
+<ol>
+  <li><strong>Display brightness at 100%</strong> leaves no headroom. Try ~70%.</li>
+  <li><strong>Low Power Mode</strong> caps headroom entirely.</li>
+  <li><strong>Backgrounded windows</strong> have their headroom reclaimed.</li>
+  <li><strong>External monitors</strong> other than Pro Display XDR are SDR.</li>
+</ol>
+
+</div></body></html>
