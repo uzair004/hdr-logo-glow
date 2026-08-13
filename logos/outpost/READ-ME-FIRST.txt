@@ -1,0 +1,104 @@
+Outpost — glowing logo files
+============================
+
+The Outpost logo can be made to shine far brighter than normal white on recent Apple
+screens (MacBook Pro, Pro Display XDR, iPhone 12 and newer). On every other screen it
+looks completely ordinary.
+
+Pick ONE file and upload it as the LinkedIn company page logo.
+
+
+THIS LOGO IS DIFFERENT FROM THE ALGORITHM.IO ONE
+------------------------------------------------
+
+The algorithm.io mark is white on black, so the choice there was which half lights up.
+Outpost is a white flower on a blue square with no black at all, so the choice here is
+different: how much of the blue comes up with the flower.
+
+The blue is left exactly as it is in option 1. It has NOT been shifted, resaturated or
+recoloured — the exact value 106/145/227 survives the conversion unchanged. Verified.
+
+
+THE TWO OPTIONS
+---------------
+
+  option-1-petals-glow/           Only the white flower lights up. The blue stays at
+                                  precisely the brightness it is today.
+                                  28% of the tile glows. The flower reads as cut from
+                                  light, sitting on the blue we already use.
+                                  >>> RECOMMENDED <<<
+
+  option-2-whole-tile-backlit/    The blue is lifted too, to roughly the brightness of
+                                  normal page white, and the flower goes far above it.
+                                  The whole square reads as a lit panel rather than a
+                                  flower sitting on a background.
+                                  Bolder. Also a brighter block of blue in someone's
+                                  feed at midnight, which is the cost.
+
+
+INSIDE EACH FOLDER
+------------------
+
+  ...-STRONG.jpg      The level Haladir and the others use. Start here.
+  ...-MAXIMUM.jpg     As far as the format goes. On today's screens this looks almost
+                      the same as STRONG but clips flat instead of rolling off, which
+                      reads as a mistake. Rarely worth it.
+  ...-STRONG.png      Same, for our own website.
+  ...-MAXIMUM.png     Same, for our own website.
+  outpost-normal-no-glow.jpg
+                      Plain version, no effect. Re-upload to undo, in 30 seconds.
+
+All files are 720x720, resampled cleanly from the 1440x1440 original.
+
+
+WHICH FILE FORMAT GOES WHERE
+----------------------------
+
+  .jpg    LinkedIn and any other social platform. They re-encode uploads but keep the
+          colour profile, which is where the whole effect lives.
+
+  .png    Our own website. Lossless, and carries the same instruction in a different
+          form that social platforms would strip.
+
+
+BEFORE YOU UPLOAD
+-----------------
+
+Check the file in Chrome or Safari first, on a recent MacBook Pro, with Low Power Mode
+off and the window in front. If it does not glow there, something stripped it in
+transit — re-copy from this folder rather than from a Slack or email preview.
+
+Do not screenshot it to show someone. Screenshots flatten it back to normal white.
+
+Check it on a LIGHT background too. LinkedIn's default is light mode, and a blue tile
+on white behaves differently from a blue tile on dark. Section 5 of the verify page
+does this comparison.
+
+
+IF IT LOOKS THE SAME AS THE NORMAL VERSION
+------------------------------------------
+
+Open  diagnostics/VERIFY.html  in Chrome or Safari. Not Finder, not Preview.
+
+Section 1 is flat squares of pure light next to plain white. If those do not clearly
+outshine the white swatch, nothing is wrong with the files — it is the screen or its
+settings. In order of how often it is the cause:
+
+  1. Screen brightness at 100%. Drop it to about 70%. At full brightness the panel is
+     already at its limit and has nothing left in reserve. This is usually the answer.
+  2. Low Power Mode is on. It removes the extra range completely.
+  3. The window is in the background. Background windows lose the extra brightness.
+  4. You are looking in Finder, Quick Look or Preview. Only browsers show it.
+  5. You are on an external monitor that is not a Pro Display XDR.
+
+
+WORTH KNOWING
+-------------
+
+This can stop working. LinkedIn can switch it off site-wide with a small change, and
+Slack already has. Treat it as something that runs for a few months, not as our
+permanent logo. Nothing breaks when it does — it goes back to looking normal.
+
+It will also annoy some people. A bright patch in a night-time feed is genuinely
+uncomfortable, and worse for anyone with migraine or light sensitivity. Option 1 keeps
+the lit area to the flower only, which is most of why it is the gentler choice.

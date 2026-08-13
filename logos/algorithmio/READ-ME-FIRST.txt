@@ -1,0 +1,98 @@
+algorithm.io — glowing logo files
+=================================
+
+Our logo can be made to shine far brighter than normal white on recent Apple screens
+(MacBook Pro, Pro Display XDR, iPhone 12 and newer). On every other screen it looks
+completely ordinary. This folder has both ways of doing it, at two intensities.
+
+Pick ONE file and upload it as the LinkedIn company page logo.
+
+
+THE TWO OPTIONS
+---------------
+
+  option-1-shape-glows/     The white shape lights up. The square stays black.
+                            9.5% of the tile glows. Reads like a neon sign.
+                            On an ordinary screen this is our logo exactly as it is
+                            today — nobody sees a change.
+                            >>> RECOMMENDED <<<
+
+  option-2-square-glows/    The square lights up. The shape becomes a black cut-out.
+                            91% of the tile glows. Far more noticeable in a feed.
+                            This is what Haladir does.
+                            But on an ordinary screen our logo becomes a WHITE square,
+                            which is a permanent brand change for most people.
+
+
+INSIDE EACH FOLDER
+------------------
+
+  ...-STRONG.jpg            The level Haladir and the others use. Start here.
+  ...-MAXIMUM.jpg           As far as the format goes. On today's screens this looks
+                            almost the same as STRONG but clips flat instead of
+                            rolling off, which reads as a mistake. Rarely worth it.
+  ...-STRONG.png            Same, for our own website.
+  ...-MAXIMUM.png           Same, for our own website.
+  ...-no-glow.jpg           Plain version, no effect. Re-upload to undo, in 30 seconds.
+
+  option 2 also has:
+  ...-STRONG-textured.jpg   Adds a very slow, soft variation across the lit area.
+                            It stops the square reading as a flat blown-out slab and
+                            makes it look like lit material instead. Haladir's logo
+                            has this. It does mean inventing a texture our logo has
+                            never had, so it is a real design decision, not a setting.
+
+
+WHICH FILE FORMAT GOES WHERE
+----------------------------
+
+  .jpg    LinkedIn and any other social platform.
+          They re-encode uploads but keep the colour profile, which is where the whole
+          effect lives. Use the JPEG there.
+
+  .png    Our own website. Lossless and much smaller. Carries the same instruction in
+          a different form that social platforms would strip.
+
+
+BEFORE YOU UPLOAD
+-----------------
+
+Check the file in Chrome or Safari first, on a recent MacBook Pro, with Low Power Mode
+off and the window in front. If it does not glow there, something stripped it in
+transit — re-copy from this folder rather than from a Slack or email preview.
+
+Do not screenshot it to show someone. Screenshots flatten it back to normal white.
+Send them the file, or the decision page link.
+
+
+IF IT LOOKS THE SAME AS THE NORMAL VERSION
+------------------------------------------
+
+Open  diagnostics/VERIFY.html  in Chrome or Safari. Not Finder, not Preview.
+
+Section 1 is four flat squares of pure light next to plain white. If those do not
+clearly outshine the white swatch, nothing is wrong with the files — it is the screen
+or its settings. In order of how often it is the cause:
+
+  1. Screen brightness at 100%. Drop it to about 70%. At full brightness the panel is
+     already at its limit and has nothing left in reserve. This is usually the answer.
+  2. Low Power Mode is on. It removes the extra range completely.
+  3. The window is in the background. Background windows lose the extra brightness.
+  4. You are looking in Finder, Quick Look or Preview. Only browsers show it.
+  5. You are on an external monitor that is not a Pro Display XDR.
+
+If the flat squares DO outshine the white, the files are working and what you are
+seeing is honest: option 1 lights only 9.5% of the square. Section 4 of VERIFY.html
+puts option 1, option 2 and Haladir's real file side by side at the same setting.
+
+
+WORTH KNOWING
+-------------
+
+This can stop working. LinkedIn can switch it off site-wide with a small change, and
+Slack already has. Treat it as something that runs for a few months, not as our
+permanent logo. Nothing breaks when it does — it goes back to looking normal.
+
+It will also annoy some people. A bright patch in a night-time feed is genuinely
+uncomfortable, and worse for anyone with migraine or light sensitivity. Option 1 keeps
+the bright area small, which is most of why it is the gentler choice.

@@ -61,19 +61,33 @@ contradicting `sRGB`/`gAMA`/`cHRM` (use for your own site).
 - Threshold uses smoothstep, so there is no seam where the lift starts.
 - 8-bit PQ bands in dark gradients. Flat logos are fine; use 16-bit PNG for soft ramps.
 
-## Examples
+## Logos
 
-`examples/` contains the source mark and two encodings for each logo.
+`logos/<brand>/` holds the finished uploads: two directions each, at STRONG (4000 nits)
+and MAXIMUM (10000), as `.jpg` and `.png`, plus a no-glow file for rollback. Each folder
+is self-contained — own readme, own `diagnostics/VERIFY.html`. Zip and send as is.
 
 | | lit area | approach |
 |---|---|---|
-| `algorithmio/algorithmio-glow-STRONG.jpg` | 9.5% | white mark lifts, black square stays at 0 nits |
-| `algorithmio/algorithmio-inverted-STRONG-textured.jpg` | 91% | polarity flipped, field lifts, shimmer added |
-| `outpost/outpost-glow-STRONG.jpg` | 28% | white petals lift, brand blue untouched at 59 nits |
-| `outpost/outpost-backlit-STRONG.jpg` | 29% | same, blue also raised to ~202 nits |
+| `algorithmio/option-1-shape-glows/` | 9.5% | white mark lifts, black square stays at 0 nits |
+| `algorithmio/option-2-square-glows/` | 91% | polarity flipped, field lifts; `-textured` adds shimmer |
+| `outpost/option-1-petals-glow/` | 28% | white petals lift, brand blue untouched at 59 nits |
+| `outpost/option-2-whole-tile-backlit/` | 29% | same, blue also raised to ~202 nits |
 
-`docs/verify.html` — open in Chrome or Safari. Flat luminance probes to confirm the
-display is capable, then the examples. Finder, Quick Look and Preview flatten HDR.
+The two are worth reading together: algorithm.io is white-on-black and takes a
+proportional lift, Outpost is coloured and needs a thresholded one so the brand blue
+keeps its real luminance.
+
+## Pages
+
+Open in Chrome or Safari — Finder, Quick Look and Preview flatten HDR.
+
+- `docs/verify.html` — luminance probes to confirm the display is capable, then every logo
+- `docs/algorithmio-logo-vote.html` — plain-language page for a team to pick a variant
+- `docs/haladir-teardown.html` — how the technique was reverse-engineered from a live file
+
+The two `docs/` pages inline every image, so they work offline and nothing in transit
+can strip the colour profile.
 
 ## Caveats
 

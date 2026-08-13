@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>Verify the delivered files</title><style>
+:root{color-scheme:dark}
+body{margin:0;background:#07080a;color:#c9d1da;font:15px/1.6 -apple-system,system-ui,sans-serif;padding:44px 30px 90px}
+.w{max-width:980px;margin:0 auto}
+h1{font:600 26px/1.2 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:-.02em;color:#edf3f8;margin:0 0 12px}
+h2{font:600 10px/1.5 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#49515b;margin:46px 0 14px}
+p{color:#79838f;max-width:66ch}p strong{color:#c9d1da;font-weight:600}
+.row{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;background:#1b1f23;border:1px solid #1d2128;border-radius:3px;padding:28px 26px;overflow-x:auto}
+figure{margin:0;text-align:center;flex:none}
+img,.sw{display:block;width:124px;height:124px;border-radius:12px;background:#000}
+.sw{background:#fff}
+figcaption{margin-top:10px;font:500 10px/1.45 ui-monospace,SF Mono,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8f9aa6}
+figcaption b{display:block;color:#9be8ff;font-weight:600}
+ol{color:#79838f;max-width:66ch;padding-left:20px}li{margin-bottom:10px}li strong{color:#c9d1da}
+</style></head><body><div class="w">
+
+<h1>Are the delivered files correct?</h1>
+<p>This page loads <strong>the exact files in this folder</strong> — not copies, not re-encodes.
+   Open it in <strong>Chrome or Safari</strong>. Finder, Quick Look and Preview will not show the effect.</p>
+
+<h2>1 · Is the effect working on this screen at all?</h2>
+<p>Flat squares of pure light, nothing else. If these do not clearly outshine the plain
+   white swatch, the problem is the screen or its settings — not the logo files.</p>
+<div class="row">
+  <figure><span class="sw"></span><figcaption>plain white<br><b>#ffffff</b></figcaption></figure>
+  <figure><img src="probe_flat_1000.jpg"><figcaption>flat<br><b>1000</b></figcaption></figure>
+  <figure><img src="probe_flat_4000.jpg"><figcaption>flat<br><b>4000</b></figcaption></figure>
+  <figure><img src="probe_flat_10000.jpg"><figcaption>flat<br><b>10000</b></figcaption></figure>
+</div>
+
+<h2>2 · Option 1 — the shape glows</h2>
+<div class="row">
+  <figure><img src="../option-1-shape-glows/algorithmio-normal-no-glow.jpg"><figcaption>no glow<br><b>baseline</b></figcaption></figure>
+  <figure><img src="../option-1-shape-glows/algorithmio-glow-STRONG.jpg"><figcaption>option 1<br><b>strong</b></figcaption></figure>
+  <figure><img src="../option-1-shape-glows/algorithmio-glow-MAXIMUM.jpg"><figcaption>option 1<br><b>maximum</b></figcaption></figure>
+</div>
+
+<h2>3 · Option 2 — the square glows</h2>
+<div class="row">
+  <figure><img src="../option-2-square-glows/algorithmio-inverted-normal-no-glow.jpg"><figcaption>no glow<br><b>baseline</b></figcaption></figure>
+  <figure><img src="../option-2-square-glows/algorithmio-inverted-STRONG.jpg"><figcaption>option 2<br><b>strong</b></figcaption></figure>
+  <figure><img src="../option-2-square-glows/algorithmio-inverted-STRONG-textured.jpg"><figcaption>option 2<br><b>textured</b></figcaption></figure>
+  <figure><img src="../option-2-square-glows/algorithmio-inverted-MAXIMUM.jpg"><figcaption>option 2<br><b>maximum</b></figcaption></figure>
+</div>
+
+<h2>4 · The two options against Haladir's real file</h2>
+<p>Same brightness in all three. What differs is how much of the square is lit:
+   option 1 lights <strong>9.5%</strong>, option 2 lights <strong>91%</strong>, Haladir lights <strong>69%</strong>.</p>
+<div class="row">
+  <figure><img src="../option-1-shape-glows/algorithmio-glow-STRONG.jpg"><figcaption>ours · 9.5% lit<br><b>option 1</b></figcaption></figure>
+  <figure><img src="../option-2-square-glows/algorithmio-inverted-STRONG-textured.jpg"><figcaption>ours · 91% lit<br><b>option 2</b></figcaption></figure>
+  <figure><img src="haladir.jpg"><figcaption>haladir · 69% lit<br><b>reference</b></figcaption></figure>
+</div>
+
+<h2>If section 1 looks flat</h2>
+<ol>
+  <li><strong>Turn screen brightness down to about 70%.</strong> The most common cause by far. At 100% the screen is already at its limit and has nothing left in reserve.</li>
+  <li><strong>Low Power Mode off.</strong> It removes the extra range entirely.</li>
+  <li><strong>Keep the window in front.</strong> Background windows lose the extra brightness.</li>
+  <li><strong>Use Chrome or Safari.</strong> Finder icons, Quick Look and column previews flatten it.</li>
+  <li><strong>Not on an external monitor</strong> unless it is a Pro Display XDR.</li>
+</ol>
+
+</div></body></html>
